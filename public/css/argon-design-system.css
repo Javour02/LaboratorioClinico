@@ -376,6 +376,27 @@ progress {
   -webkit-appearance: button;
 }
 
+.ejemplo{
+  width: 100%;
+  height: 43rem;
+  display: flex;
+  background-color: rgb(163, 163, 163);
+  align-items: center;
+  flex-direction: column;
+  position: inherit;
+  padding: 32px;
+}
+.ejemplo2{
+  width: 50%;
+  height: 50px;
+  background-color: rgb(156, 23, 23);
+}
+.ejemplobig{
+  width: 50%;
+  height: 150px;
+  background-color: rgb(3, 19, 240);
+
+}
 output {
   display: inline-block;
 }
@@ -2660,16 +2681,17 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #5e72e4;
-  border-color: #5e72e4;
+  color: #ffffff;
+  background-color: #8e0101;
+  border-color: #af1313;
+  box-shadow: 
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #3d55df;
-  border-color: #324cdd;
+  background-color: #804545;
+  border-color: #804545;
 }
 
 .btn-primary:focus,
@@ -3128,14 +3150,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #5e72e4;
-  border-color: #5e72e4;
+  color: #750404;
+    border-color: #820707;
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #5e72e4;
-  border-color: #5e72e4;
+  background-color: #858686;
+  border-color: #858686;
 }
 
 .btn-outline-primary:focus,
@@ -16415,7 +16437,7 @@ button.bg-lighter:focus {
 }
 
 .bg-gradient-default {
-  background: linear-gradient(35deg, #172b4d 0, #1a174d 100%) !important;
+  background: linear-gradient(35deg, #fd6060 0, #610202  100%) !important;
 }
 
 .bg-gradient-white {
@@ -16710,7 +16732,7 @@ button.section-darker:focus {
 }
 
 .bg-gradient-default {
-  background: linear-gradient(35deg, #172b4d 0, #1a174d 100%) !important;
+  background: linear-gradient(35deg, #fd6060 0, #610202  100%) !important;
 }
 
 .bg-gradient-white {
@@ -20674,7 +20696,7 @@ textarea[resize="horizontal"] {
 }
 
 .section-shaped .shape-style-1.shape-primary {
-  background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+  background: linear-gradient(150deg, #540000 15%, #e25959 70%, #f38c8c 94%);
 }
 
 .section-shaped .shape-style-1.shape-default {
