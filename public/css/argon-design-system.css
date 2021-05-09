@@ -24230,6 +24230,11 @@ pre>code.highlight {
   }
 }
 
+.tabla{
+  width: 80%;
+  border: 1px solid #000;
+}
+
 .ct-search {
   position: relative;
   padding: 1rem 15px;

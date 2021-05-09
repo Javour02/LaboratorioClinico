@@ -107,7 +107,7 @@
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
               
               <li class="nav-item">
-                <a class="btn btn-neutral" href="./index.html" target="_blank">
+                <a class="btn btn-neutral" onclick="logOut()">
                   <span class="nav-link-inner--text">Log Out</span>
                 </a>
               </li>
@@ -117,16 +117,22 @@
       </nav>
       <div class="ejemplo">
         <h2 class="display-3"> Agenda una cita </h2>
+        <label for="tipos">Escoja un tipo de examen:</label>
+          <select id="tipo" name="tipos" onChange="changeTipo()">
+            <option value=""></option>
+            <option value="Hemograma">Hemograma completo</option>
+            <option value="Perfil lipidico">Perfil lipídico</option>
+            <option value="Perfil hepatico">Perfil hepático</option>
+            <option value="Perfil tiroideo">Perfil tiroideo</option>
+          </select>
+          <div id="respuesta-Tipo">
 
-        <button type="button" class="btn btn-primary">Agendar</button>
-  
-
-
+          </div>
+        <input id="fecha-cita" type="date">
+        <button type="button" onclick="agendarExamen()" class="btn btn-primary">Agendar</button>
       </div>
-     
-      
-      
-
+     <script src="./js/agendar.js"></script>
+     <script src="./js/logout.js"></script>
 </body>
 
 </html>
