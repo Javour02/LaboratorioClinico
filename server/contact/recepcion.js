@@ -96,13 +96,13 @@ exports.consulta = (con, res)=>{
                 console.log(k);
                 if(k !== "" && k !== 'resultados'){
                     
-                    respuesta+=`<th class="table-header">${k}</th>`;
+                    respuesta+=`<th class="table-header">${k}</th>`; 
                 }
             });
             respuesta+='</tr><tr>';
             JSON.parse(JSON.stringify(json3[index]), (k,v)=>{
                 if(k !== "" && k !== 'resultados'){
-                    respuesta+=`<td  class="table-data">${v}</td>`;
+                    respuesta+=`<td  class="table-data">${v}</td>`; 
                 }
             });
             respuesta+='</tr></table>';

@@ -394,6 +394,33 @@ progress {
   justify-content: center;
 
 }
+
+.tabla {    
+   font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;  
+    margin: 45px;    
+    width: 480px; text-align: left;  
+    border-collapse: collapse; }
+
+.table-header {    
+   font-size: 13px;  
+    font-weight: normal;   
+    padding: 8px;   
+    background: #feb9b9;
+    border-top: 4px solid #feaaaa; 
+    border-bottom: 1px solid #fff; 
+    color: rgb(100, 7, 7); }
+
+.table-data{    
+  padding: 8px;     
+  background: #ffe8e8;     
+  border-bottom: 1px solid #fff;
+  color: rgb(153, 102, 102);    
+  border-top: 1px solid transparent; }
+
+.table-data:hover td { 
+  background: #d0dafd; 
+  color: rgb(153, 51, 51); }
 .ejemplo2{
   width: 50%;
   height: 50px;
