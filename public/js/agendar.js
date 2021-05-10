@@ -1,6 +1,9 @@
 function changeTipo(){
     let json = {};
-    json.tipo = document.getElementById("tipo").value;
+    var tipo = document.getElementById("tipo").value;
+    if(tipo === ""){
+    }else{
+        json.tipo = tipo;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -10,6 +13,7 @@ function changeTipo(){
     xhttp.open("POST", "/mostrarInfoTipo");
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.send(JSON.stringify(json));
+    }  
 }
 
 function agendarExamen(){
