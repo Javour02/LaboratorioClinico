@@ -79,7 +79,7 @@ exports.logOut = ()=>{
 }
 
 exports.consulta = (con, res)=>{
-    let query = `SELECT CONCAT(p.nombres,' ',p.apellidos) as nombrePaciente, t.nombre, CONCAT(YEAR(e.fecha_cita),'-', MONTH(e.fecha_cita),'-',DAY(e.fecha_cita)) as fechaCita from examen e
+    let query = `SELECT CONCAT(p.nombres,' ',p.apellidos) as nombrePaciente, t.nombre, CONCAT(YEAR(e.fecha_cita),'-', MONTH(e.fecha_cita),'-',DAY(e.fecha_cita)) as fechaCita, json_resultados as resultados from examen e
     JOIN tipo t USING(idTipo)
     JOIN pacientes p USING(idPaciente)
     WHERE p.cedula = '${cedulaLogged}'`;
