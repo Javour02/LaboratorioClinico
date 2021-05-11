@@ -38,16 +38,16 @@ exports.verDetallesExamen = (con, req, res)=>{
     let query = `SELECT descripcion, recomendaciones, costo, tiempo_aprox from tipo where nombre = '${req.body.tipo}'`;
     con.query(query, (err, result)=>{
         if(err) throw err;
-        let resultado = '<table><tr>'
+        let resultado = '<table class="tabla"><tr>'
         JSON.parse(JSON.stringify(result[0]), function(k, v){
             if(k!==""){
-                resultado+=`<th>${k}</th>`;
+                resultado+=`<th class="table-header">${k}</th>`;
             }
         });
         resultado+="</tr><tr>"
         JSON.parse(JSON.stringify(result[0]), function(k, v){
             if(k!==""){
-                resultado+=`<td>${v}</td>`;
+                resultado+=`<td class="table-data">${v}</td>`;
             }
         });
         resultado+="</tr></table>";
